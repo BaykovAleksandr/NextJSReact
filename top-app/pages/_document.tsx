@@ -1,8 +1,13 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from "next/document";
 
-export default function Document() {
+export default class MyDocument extends Document {
+  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+    const initialProps = await Document.getInitialProps(ctx);
+    return {...initialProps};
+  }
+  render(): JSX.Element {
   return (
-    <Html lang="en">
+    <Html lang="ru">
       <Head />
       <body>
         <Main />
@@ -10,4 +15,5 @@ export default function Document() {
       </body>
     </Html>
   );
+}
 }
