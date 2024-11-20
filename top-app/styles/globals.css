@@ -1,6 +1,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --black: #3B434E;
+  --white: white;
+  --primary: #7653FC;
+  --red: #FC836D;
+  --green: #1DC37E;
+  --green-light: #C8F8E4; 
+  --font-family: "Noto Sans",
+    sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,8 +25,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--black);
+  background: #F5F6F8;
   font-family: "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
