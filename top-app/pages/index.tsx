@@ -1,22 +1,15 @@
 //import localFont from "next/font/local";
+import React from 'react';
+import { Htag } from '../components';
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
 
-export default function Home() {
+
+export default function Home(): JSX.Element {
   return (
     
-      <div>
-      Hello world
-      </div>
+      <>
+      <Htag tag='h1'>Текст</Htag>
+      </>
     
   );
 }
