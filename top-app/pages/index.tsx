@@ -1,6 +1,6 @@
 //import localFont from "next/font/local";
 import React from 'react';
-import { Htag } from '../components';
+import { Htag, Button } from '../components';
 
 
 
@@ -9,6 +9,7 @@ export default function Home(): JSX.Element {
     
       <>
       <Htag tag='h1'>Текст</Htag>
+      <Button appearence='primary'>Кнопка</Button>
       </>
     
   );
