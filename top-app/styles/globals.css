@@ -5,6 +5,7 @@
   --grey-light: #EBEBEB;
   --white: white;
   --primary: #7653FC;
+  --primary-hover: #6344D8;
   --red: #FC836D;
   --green: #1DC37E;
   --green-light: #C8F8E4; 
@@ -12,12 +13,12 @@
     sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html,
 body {
@@ -44,8 +45,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-  }
-}
+  } */
+
